@@ -1,173 +1,27 @@
 {% extends 'base.html' %}
-
 {% load static %}
-
-{% block head_title %}
-Department of Infrastucture, Ports, Energy and Transport
-{% endblock head_title %}
-
-
-
 {% block content %}
-<div class="w-100 m-0 p-0">
-    <div class="mb-5">
-        <div id="carouselExampleSlidesOnly"
-            class="carousel slide"
-            data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img height="300" src="{% static 'images/img.jpg'%}"
-                        class="d-block w-100"
-                        alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img height="300" src="{% static 'images/img1.jpg'%}"
-                        class="d-block w-100"
-                        alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img height="300" src="{% static 'images/img2.jpg'%}"
-                        class="d-block w-100"
-                        alt="...">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container text-center">
-        <p class="fs-6 fw-bold text-">Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Excepturi
-            sunt labore fugiat impedit magnam iusto consequatur deleniti iure
-            tenetur provident sapiente aliquid sed fugit, facere nulla alias
-            nam distinctio similique. Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Accusamus delectus autem et eius voluptate unde,
-            molestiae ipsum inventore incidunt minima nostrum qui quibusdam,
-            deserunt quo, asperiores reiciendis ex ipsam vitae!</p>
-        <br><br>
-        <div class="d-flex justify-content-around">
-            <div>
-                <div class="bg-dark rounded-circle"
-                    style="height: 8rem; width:8rem;"></div><br><span>Lorem,
-                    ipsum.</span>
-            </div>
-            <div>
-                <div class="bg-dark rounded-circle"
-                    style="height: 8rem; width:8rem;"></div>
-                <br><span>Lorem,
-                    ipsum.</span>
-            </div>
-            <div>
-                <div class="bg-dark rounded-circle"
-                    style="height: 8rem; width:8rem;"></div>
-                <br><span>Lorem,
-                    ipsum.</span>
-            </div>
-            <div>
-                <div class="bg-dark rounded-circle"
-                    style="height: 8rem; width:8rem;"></div>
-                <br><span>Lorem,
-                    ipsum.</span>
-            </div>
-        </div>
-    </div>
-    <br><br>
-    <div class="w-100 bg-light my-5">
-        <div class="container">
-            <div class="col-lg-8 mx-auto p-5">
-            <h1>News</h1><br>
-                <div class="row shadow mb-3">
-                    <div class="col p-5">
-                        <p class="fw-bold">Lorem, ipsum dolor.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            Aliquid quis at fuga aliquam, fugit natus,
-                            doloribus
-                            nam beatae nemo, ipsum placeat eum dolores totam
-                            ducimus sunt ab quae tempora voluptatum.</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <img width="200" src="{% static 'images/v-img.jpg'%}" alt="">
-                    </div>
-                </div>
-                <div class="row shadow mb-3">
-                    <div class="col p-5">
-                        <p class="fw-bold">Lorem, ipsum dolor.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            Aliquid quis at fuga aliquam, fugit natus,
-                            doloribus
-                            nam beatae nemo, ipsum placeat eum dolores totam
-                            ducimus sunt ab quae tempora voluptatum.</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <img width="200" src="{% static 'images/v-img1.jpg'%}" alt="">
-                    </div>
-                </div>
-                <div class="row shadow mb-3">
-                    <div class="col p-5">
-                        <p class="fw-bold">Lorem, ipsum dolor.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            Aliquid quis at fuga aliquam, fugit natus,
-                            doloribus
-                            nam beatae nemo, ipsum placeat eum dolores totam
-                            ducimus sunt ab quae tempora voluptatum.</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <img width="200" src="{% static 'images/v-img2.jpg'%}" alt="">
-                    </div>
-                </div>
-                <a class="float-end text-dark" href="">More...</a>
-            </div>
-            <div class="col-lg-8 mx-auto p-5">
-            <h1>Projects</h1><br>
-                <div class="row shadow mb-3">
-                    <div class="col p-5">
-                        <p class="fw-bold">Lorem, ipsum dolor.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            Aliquid quis at fuga aliquam, fugit natus,
-                            doloribus
-                            nam beatae nemo, ipsum placeat eum dolores totam
-                            ducimus sunt ab quae tempora voluptatum.</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <img width="200" src="{% static 'images/v-img.jpg'%}" alt="">
-                    </div>
-                </div>
-                <div class="row shadow mb-3">
-                    <div class="col p-5">
-                        <p class="fw-bold">Lorem, ipsum dolor.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            Aliquid quis at fuga aliquam, fugit natus,
-                            doloribus
-                            nam beatae nemo, ipsum placeat eum dolores totam
-                            ducimus sunt ab quae tempora voluptatum.</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <img width="200" src="{% static 'images/v-img1.jpg'%}" alt="">
-                    </div>
-                </div>
-                <div class="row shadow mb-3">
-                    <div class="col p-5">
-                        <p class="fw-bold">Lorem, ipsum dolor.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                            Aliquid quis at fuga aliquam, fugit natus,
-                            doloribus
-                            nam beatae nemo, ipsum placeat eum dolores totam
-                            ducimus sunt ab quae tempora voluptatum.</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <img width="200" src="{% static 'images/v-img2.jpg'%}" alt="">
-                    </div>
-                </div>
-                <a class="float-end" href="">More...</a>
-
-            </div>
-        </div>
-    </div>
-
-
+<section class="hero" aria-labelledby="hero-title">
+  <img class="hero-image" src="{% static 'images/castries-harbour.jpg' %}" alt="Aerial view of Castries harbour, its port facilities and the surrounding green hills">
+  <div class="container hero-content"><p class="eyebrow light">CONNECTING OUR ISLAND. BUILDING OUR FUTURE.</p><h1 id="hero-title">Stronger connections.<br>A stronger Saint Lucia.</h1><p>Building the infrastructure that brings us together.<br class="desktop-break"> Supporting our communities, connecting our people<br class="desktop-break"> and moving our nation forward.</p><a class="button gold" href="#our-work">Explore our work <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a></div>
+  <span class="photo-caption">CASTRIES HARBOUR, SAINT LUCIA</span>
+</section>
+<div class="container quick-links" aria-label="Quick links">
+  <a href="#services"><svg aria-hidden="true" class="icon quick-icon"><use href="#road"/></svg><span>Access a service<small>Find the help you need</small></span><svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a>
+  <a href="#projects"><svg aria-hidden="true" class="icon quick-icon"><use href="#anchor"/></svg><span>Explore our projects<small>Infrastructure for tomorrow</small></span><svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a>
+  <a href="#publications"><svg aria-hidden="true" class="icon quick-icon"><use href="#file"/></svg><span>Find a publication<small>Plans, policies & resources</small></span><svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a>
+  <a href="#contact"><svg aria-hidden="true" class="icon quick-icon"><use href="#message"/></svg><span>Get in touch<small>We’re here to help</small></span><svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a>
 </div>
-{% endblock content %}
+<section class="section container about-intro" id="about"><div><p class="eyebrow">WORKING FOR SAINT LUCIA</p><h2>Connecting people.<br>Creating possibilities.</h2></div><div><p>From the roads we travel to the ports that connect us to the world, infrastructure is part of everyday life. Our focus is on a safer, more connected and resilient Saint Lucia.</p><a class="text-link" href="#our-work">Discover what we do <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a></div></section>
+<section class="work-section" id="our-work"><div class="container section"><div class="section-heading"><div><p class="eyebrow">OUR AREAS OF FOCUS</p><h2>Moving Saint Lucia forward</h2></div><span class="section-note">Better infrastructure. Better everyday lives.</span></div>
+  <div class="work-grid">
+    <a class="work-card" href="https://infrastructure.govt.lc/ministries/infrastructure-port-services-and-transport/technical"><div class="card-image"><img src="{% static 'images/img.jpg' %}" alt="Road worker and road roller resurfacing a street" loading="lazy"><span class="image-label">INFRASTRUCTURE</span></div><div class="card-body"><h3>Roads & infrastructure</h3><p>Connecting communities through roads, public works and resilient infrastructure.</p><span class="card-link">Explore infrastructure <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></span></div></a>
+    <a class="work-card" href="https://www.slaspa.com/"><div class="card-image port-image"><img src="{% static 'images/castries-harbour.jpg' %}" alt="Cruise ships and cargo facilities in Castries harbour" loading="lazy"><span class="image-label">PORT SERVICES</span></div><div class="card-body"><h3>Ports & connectivity</h3><p>Our gateways to the world. Connecting trade, travel and opportunity.</p><span class="card-link">Explore port services <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></span></div></a>
+    <a class="work-card transport-card" href="https://www.govt.lc/ministries/public-service-information-and-broadcasting/transport"><div class="card-image"><img src="{% static 'images/img2.jpg' %}" alt="A paved road with yellow centre lines winding through green hills" loading="lazy"><span class="image-label">TRANSPORT</span></div><div class="card-body"><h3>Transport & road safety</h3><p>Helping people move safely, with access to transport information and services.</p><span class="card-link">Explore transport <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></span></div></a>
+  </div>
+</div></section>
+<section class="container section services-section" id="services"><div class="services-intro"><p class="eyebrow">HERE TO HELP</p><h2>I want to…</h2><p>A simpler way to find the information<br>and services you need.</p><a class="text-link" href="https://infrastructure.govt.lc/services">View ministry services <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a></div><div class="service-links"><a href="https://www.govt.lc/ministries/public-service-information-and-broadcasting/transport">Find driver & vehicle services <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a><a href="https://infrastructure.govt.lc/services/request-electrical-certification">Request electrical certification <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a><a href="https://infrastructure.govt.lc/services/testing-of-construction-materials-for-compliance-to-requisite-standards">Arrange construction materials testing <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a><a href="https://infrastructure.govt.lc/notices">Find tenders & procurement notices <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a><a href="#contact">Contact the ministry <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a></div></section>
+<section class="project-feature" id="projects"><div class="project-photo"><img src="{% static 'images/v-img.jpg' %}" alt="Road construction crew laying asphalt" loading="lazy"></div><div class="project-copy"><p class="eyebrow light">PROJECT SPOTLIGHT</p><h2>Investing in the roads<br>that connect us.</h2><p>Explore the Millennium Highway and West Coast Road Reconstruction Project, and learn about the work to strengthen this important connection for Saint Lucia.</p><a class="button gold" href="https://www.mhwcrrpstlucia.org/">Discover the project <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a><span class="project-footnote">Image: roadworks illustration</span></div></section>
+<section class="container section" id="updates"><div class="section-heading"><div><p class="eyebrow">STAY INFORMED</p><h2>Updates & resources</h2></div><a class="text-link" href="https://infrastructure.govt.lc/news/from/ministries/infrastructure-port-services-and-transport">Visit the news room <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a></div>{% include 'partials/updates.html' %}<p class="resource-note">Selected resources from the ministry’s official website. Follow each link for the original details and current status.</p></section>
+<section class="resources-strip" id="publications"><div class="container resources-inner"><div class="resource-icon"><svg aria-hidden="true" class="icon"><use href="#file"/></svg></div><div><p class="eyebrow">INFORMATION AT YOUR FINGERTIPS</p><h2>Looking for a document?</h2><p>Explore publications, policies and official ministry resources.</p></div><a class="button outline" href="https://infrastructure.govt.lc/publications">Browse publications <svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a></div></section>
+{% endblock %}

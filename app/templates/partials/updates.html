@@ -1,0 +1,25 @@
+<div id="updates-content">
+  <div class="filter-tabs" role="group" aria-label="Filter updates">
+    {% for value, label in filters %}
+      <a href="{% url 'home' %}?category={{ value }}#updates"
+         hx-get="{% url 'updates' %}?category={{ value }}"
+         hx-target="#updates-content" hx-swap="outerHTML"
+         hx-sync="#updates-content:replace" hx-indicator="#updates-loading"
+         {% if category == value %}class="selected" aria-current="true"{% endif %}>{{ label }}</a>
+    {% endfor %}
+  </div>
+  <span id="updates-loading" class="htmx-indicator loading-status" role="status">Loading updates…</span>
+  <div class="updates-grid">
+    {% for update in updates %}
+      <article class="update-card">
+        <span class="tag{% if update.category == 'publication' %} teal{% endif %}">{{ update.label }}</span>
+        <h3><a href="{{ update.url }}">{{ update.title }}</a></h3>
+        <p>{{ update.description }}</p>
+        <div class="update-bottom">
+          <span>{{ update.date_label }}</span>
+          <a href="{{ update.url }}" aria-label="Read {{ update.title }}"><svg aria-hidden="true" class="icon"><use href="#arrow"/></svg></a>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</div>

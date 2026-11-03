@@ -16,7 +16,7 @@ load_dotenv()
 SECRET_KEY = "django-insecure-(v7ps&k56yc$p(*kwhp*ns=ew!=aw17*e!up5k)m+a%85db7=%"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get("DEBUG", default=0))
+DEBUG = os.environ.get("DEBUG", "0").lower() in {"1", "true", "yes"}
 
 ALLOWED_HOSTS = ["*"]
 
@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "pages.apps.PagesConfig",
 ]
 
 MIDDLEWARE = [
@@ -133,9 +134,3 @@ ADMINS = [
 
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = "emails"
-
-directories = ["templates", "static", "static/css", "static/images", "debug"]
-
-for directory in directories:
-    if not os.path.exists(directory):
-        os.makedirs(directory)

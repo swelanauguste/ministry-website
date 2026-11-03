@@ -1,0 +1,10 @@
+{% if search_submitted %}
+  {% if search_results %}
+    <p>{{ search_results|length }} matching section{{ search_results|length|pluralize }} on this page</p>
+    {% for result in search_results %}
+      <a href="{% url 'home' %}#{{ result.anchor }}" @click="searchOpen = false">{{ result.title }} →</a>
+    {% endfor %}
+  {% else %}
+    <p>No matching sections. Try “roads”, “services”, “publications” or “contact”.</p>
+  {% endif %}
+{% endif %}
